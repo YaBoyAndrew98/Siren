@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <sources>
   <source>
-    <name>Siren Race (Homebrew)</name>
+    <name>Siren Race (Simic-Style)</name>
     <category>Homebrew</category>
-    <url>https://github.com/YaBoyAndrew98/Siren</url>
     <source>Homebrew</source>
-    <file>Siren.xml</file>
+    <file>Siren-Race-WithBoon.xml</file>
+    <file>Siren-Traits-SimicStyle.xml</file>
   </source>
 </sources>
