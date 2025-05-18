@@ -1,12 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <elements>
-  <element name="Hungering Maw" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_TRAIT_HUNGERING_MAW">
+  
+ <element name="Fangs of the First" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_PATH_TO_MATRON_TRAIT_NATURAL_WEAPONS">
     <supports>Path to Matron, 1</supports>
-    <description>At level 1, your bite deals 1d8 necrotic damage. Once per turn on a hit, you regain 1d4 HP (2d4 at L6, 3d4 at L11, 4d4 at L17). You may heal this way PB/long rest.</description>
+    <description>
+      <p>You manifest the primal weapons of your ancestry. You gain the following natural weapons:</p>
+      <ul>
+        <li><strong>Claws:</strong> You can use your claws to make unarmed strikes. On a hit, they deal 1d4 + your Strength modifier slashing damage.</li>
+        <li><strong>Bite:</strong> Your bite is a natural weapon that deals 1d4 + your Strength modifier piercing damage.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>Gain claws (1d4 + STR slashing) and bite (1d4 + STR piercing) as natural weapons.</description>
+    </sheet>
+  </element>
+
+  <element name="Echo of the Deep" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_PATH_TO_MATRON_TRAIT_SPELLCASTING">
+    <supports>Path to Matron, 2</supports>
+    <description>
+      <p>Your voice resonates with arcane undertones. You gain the following innate spellcasting traits:</p>
+      <ul>
+        <li>At 1st level, you can cast <i>Charm Person</i> once per long rest.</li>
+        <li>At 3rd level, you can cast <i>Fog Cloud</i> once per long rest.</li>
+        <li>At 5th level, you can cast <i>Enthrall</i> once per long rest.</li>
+      </ul>
+      <p>Charisma is your spellcasting ability for these spells.</p>
+    </description>
+    <sheet>
+      <description>Innate spellcasting: Charm Peson (1/LR, L1+), Fog Cloud (1/LR, L3+), Enthrall (1/LR, L5+), CHA-based.</description>
+    </sheet>
+    <rules>
+      <grant type="Innate Spellcasting" spell="ID_PHB_SPELL_CHARM_PERSON" level="1" times="1" reset="longrest" ability="charisma"/>
+      <grant type="Innate Spellcasting" spell="ID_PHB_SPELL_FOG_CLOUD" level="3" times="1" reset="longrest" ability="charisma"/>
+      <grant type="Innate Spellcasting" spell="ID_PHB_SPELL_ENTHRALL" level="5" times="1" reset="longrest" ability="charisma"/>
+    </rules>
+  </element>
+
+  <element name="Hungering Maw" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_PATH_TO_MATRON_TRAIT_HUNGERING_MAW">
+    <supports>Path to Matron, 3</supports>
+    <description>
+      <p>Your bite becomes a deadly weapon infused with magic. It deals 1d8 necrotic damage. Once per turn, when you hit a creature with your bite, you may regain 1d4 hit points. This healing increases as you level:</p>
+      <ul>
+        <li>Level 3: 1d4 HP</li>
+        <li>Level 6: 2d4 HP</li>
+        <li>Level 11: 3d4 HP</li>
+        <li>Level 17: 4d4 HP</li>
+      </ul>
+      <p>You may use this healing a number of times equal to your proficiency bonus per long rest.</p>
+    </description>
     <sheet>
       <description>Bite (1d8 necrotic). Heal 1d4 on hit once per turn, PB/LR. Heals increase at higher levels.</description>
     </sheet>
   </element>
+</elements>
 
   <element name="Song of Drowning" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_TRAIT_SONG_OF_DROWNING">
     <supports>Path to Matron, 3</supports>
