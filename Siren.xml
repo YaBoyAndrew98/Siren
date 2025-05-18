@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+  <!-- Siren Race Definition -->
+  <element name="Siren" type="Race" source="Homebrew" id="ID_CUSTOM_RACE_SIREN">
+    <description><div>
+<p>Sirens commonly appear as an amalgamation of a beautiful woman and some form of sea life; typically, they acquire features such as fins, claws, gills, and tails, and wield these features as natural extensions of their own bodies. Some have even been known to possess wings, a trait reminiscent of seafowl, but one used to deadly effect.</p>
+<h4>History</h4>
+<p>The sirens of the Emerald Coast are not born in the way mortals understand life. They are spawned through an ancient rite known as The Crimson Calling—a sacred blood ritual performed only by the reigning Matron. This rite draws on the accumulated lifeblood of mortals, harvesting both flesh and essence. When enough essence has been gathered, a siren begins to ascend, eventually performing the Calling herself, sacrificing her form to create new sirens.</p>
+<h4>Society</h4>
+<p>Sirens are fascinated with art, particularly song. They dwell in deep coral structures adorned with pearlescent carvings and treasures. Their matriarchal society is led by a Matron, followed by elite Maidens who may one day succeed her through the Crimson Calling.</p>
+<h4>Siren Names</h4>
+<p>Sirens tend toward fluid, melodic names.</p>
+<p><b><i>Female Names: </i></b>Nessia, Thalira, Vaelis, Cirell, Ylvessa, Marelline</p>
+<h4>Siren Traits</h4>
+<p>You are a born predator of the sea, feared for your haunting voice and shapeshifting aquatic form.</p>
+<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1, and you may increase one other ability score of your choice by 1.</p>
+<p class="indent"><strong><em>Age.</em></strong> Sirens reach maturity by 40 and live up to 250 years. They do not visibly age after reaching maturity.</p>
+<p class="indent"><strong><em>Alignment.</em></strong> Sirens lean toward neutral or evil, often following their desires with obsessive focus.</p>
+<p class="indent"><strong><em>Size.</em></strong> Sirens stand between 5 and 6 feet tall. Your size is Medium.</p>
+<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+<p class="indent"><strong><em>Fey.</em></strong> Your creature type is fey, not humanoid.</p>
+<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness.</p>
+<p class="indent"><strong><em>Amphibious.</em></strong> You can breathe both air and water.</p>
+<p class="indent"><strong><em>Siren’s Body.</em></strong> As a bonus action, you may transform into an aquatic form, reducing your walking speed to 0 but gaining a 40 ft. swim speed. You may revert as a bonus action.</p>
+<p class="indent"><strong><em>Natural Weapons.</em></strong> You have claws and a bite attack. Claws deal 1d4 + Strength modifier slashing damage. Bite deals 1d4 piercing damage.</p>
+<p class="indent"><strong><em>Haunting Cry.</em></strong> You have proficiency in Charisma (Performance) when singing, and add double your proficiency bonus. You know the friends cantrip. At 3rd level, you can cast charm person once per long rest. At 5th level, you may also cast suggestion once per long rest. Charisma is your spellcasting ability.</p>
+<p class="indent"><strong><em>Charm Immunity.</em></strong> You are immune to being charmed.</p>
+<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Aquan, and Auran.</p>
+</div></description>
+    <sheet display="false"/>
+    <setters>
+      <set name="names" type="female">Aurera, Hatatsu, Ketet, Menhit, Sefkhabu, Surhet</set>
+      <set name="names-format">{{name}}</set>
+      <set name="height" modifier="1d10">6'7"</set>
+      <set name="weight" modifier="1d10">500 lb.</set>
+    </setters>
+    <rules>
+      <stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+      <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Siren)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Racial Feature" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_FEY"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+      <select type="Language" name="Language (Siren)" supports="Standard||Exotic" number="2"/>
+      <grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_HUNGERING_MAW"/>
+      <grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_SONG_OF_DROWNING"/>
+      <grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_BLOOD_DRINKER"/>
+      <grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_CHORUS_DEEP"/>
+    </rules>
+  </element>
+
+  <!-- Racial Trait Elements -->
+  <element name="Hungering Maw" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_RACIAL_TRAIT_HUNGERING_MAW">
+    <description>At level 1, your bite deals 1d8 necrotic damage. Once per turn when you hit with your bite, you can regain 1d4 hit points. This healing improves as you level: 2d4 at level 6, 3d4 at level 11, and 4d4 at level 17. You may use this healing a number of times per long rest equal to your Proficiency Bonus.</description>
+    <sheet><description>At level 1, your bite deals 1d8 necrotic damage. Heal 1d4 HP once per turn (2d4 at L6, 3d4 at L11, 4d4 at L17), PB/LR uses.</description></sheet>
+    <rules><prequisite>Level 1+</prequisite></rules>
+  </element>
+
+  <element name="Song of Drowning" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_RACIAL_TRAIT_SONG_OF_DROWNING">
+    <description>At level 3, as an action while in amphibious form, target a creature within 30 feet who can hear you. It must make a Wisdom save (DC = 8 + PB + CHA mod) or be charmed and restrained until the end of your next turn. Usable once per short or long rest. At level 10, you may target two creatures.</description>
+    <sheet><description>Target one (or two at L10) creatures who hear you; if they fail a WIS save (DC 8 + PB + CHA), they are charmed and restrained until your next turn.</description></sheet>
+    <rules><prequisite>Level 3+</prequisite></rules>
+  </element>
+
+  <element name="Blood-Drinker’s Grace" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_RACIAL_TRAIT_BLOOD_DRINKER">
+    <description>At level 7, you gain advantage on two Death Saving Throws per long rest. When you reduce a creature to 0 HP with a natural weapon, gain temp HP equal to CHA mod + half your level (once per short rest).</description>
+    <sheet><description>Gain ADV on two Death Saves per LR. When you drop a creature with a natural weapon, gain temp HP = CHA mod + ½ level (1/SR).</description></sheet>
+    <rules><prequisite>Level 7+</prequisite></rules>
+  </element>
+
+  <element name="Chorus of the Deep" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_RACIAL_TRAIT_CHORUS_DEEP">
+    <description>At level 11, as an action, emit a magical scream. Creatures within 15 ft. must CON save (DC = 8 + PB + CHA). Fail = 3d8 thunder damage + deafened 1 turn. Success = half damage. Use once per LR, twice at L15.</description>
+    <sheet><description>Emit a magical scream (15 ft. area). CON save or take 3d8 thunder + deafened. 1/LR or 2/LR at L15.</description></sheet>
+    <rules><prequisite>Level 11+</prequisite></rules>
+  </element>
+</elements>
