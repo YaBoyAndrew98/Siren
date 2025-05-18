@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <elements>
-  
- <element name="Fangs of the First" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_PATH_TO_MATRON_TRAIT_NATURAL_WEAPONS">
+  <element name="Fangs of the First" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_PATH_TO_MATRON_TRAIT_NATURAL_WEAPONS">
     <supports>Path to Matron, 1</supports>
     <description>
       <p>You manifest the primal weapons of your ancestry. You gain the following natural weapons:</p>
@@ -27,7 +26,7 @@
       <p>Charisma is your spellcasting ability for these spells.</p>
     </description>
     <sheet>
-      <description>Innate spellcasting: Charm Peson (1/LR, L1+), Fog Cloud (1/LR, L3+), Enthrall (1/LR, L5+), CHA-based.</description>
+      <description>Innate spellcasting: Charm Person (1/LR, L1+), Fog Cloud (1/LR, L3+), Enthrall (1/LR, L5+), CHA-based.</description>
     </sheet>
     <rules>
       <grant type="Innate Spellcasting" spell="ID_PHB_SPELL_CHARM_PERSON" level="1" times="1" reset="longrest" ability="charisma"/>
@@ -52,7 +51,6 @@
       <description>Bite (1d8 necrotic). Heal 1d4 on hit once per turn, PB/LR. Heals increase at higher levels.</description>
     </sheet>
   </element>
-</elements>
 
   <element name="Song of Drowning" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_TRAIT_SONG_OF_DROWNING">
     <supports>Path to Matron, 3</supports>
