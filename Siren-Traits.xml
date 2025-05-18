@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <elements>
-  <element name="Fangs of the First" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_PATH_TO_MATRON_TRAIT_NATURAL_WEAPONS">
-    <supports>Path to Matron, 1</supports>
+  <element name="Fangs of the First" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_PATH_OF_MATRON_TRAIT_NATURAL_WEAPONS">
+    <supports>Path of Matron, 1</supports>
     <description>
       <p>You manifest the primal weapons of your ancestry. You gain the following natural weapons:</p>
       <ul>
@@ -14,8 +14,8 @@
     </sheet>
   </element>
 
-  <element name="Echo of the Deep" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_PATH_TO_MATRON_TRAIT_SPELLCASTING">
-    <supports>Path to Matron, 2</supports>
+  <element name="Echo of the Deep" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_PATH_OF_MATRON_TRAIT_SPELLCASTING">
+    <supports>Path of Matron, 2</supports>
     <description>
       <p>Your voice resonates with arcane undertones. You gain the following innate spellcasting traits:</p>
       <ul>
@@ -30,8 +30,8 @@
     </sheet>
   </element>
 
-  <element name="Hungering Maw" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_PATH_TO_MATRON_TRAIT_HUNGERING_MAW">
-    <supports>Path to Matron, 3</supports>
+  <element name="Hungering Maw" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_PATH_OF_MATRON_TRAIT_HUNGERING_MAW">
+    <supports>Path of Matron, 3</supports>
     <description>
       <p>Your bite becomes a deadly weapon infused with magic. It deals 1d8 necrotic damage. Once per turn, when you hit a creature with your bite, you may regain 1d4 hit points. This healing increases as you level:</p>
       <ul>
@@ -48,7 +48,7 @@
   </element>
 
   <element name="Song of Drowning" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_TRAIT_SONG_OF_DROWNING">
-    <supports>Path to Matron, 5</supports>
+    <supports>Path of Matron, 5</supports>
     <description>At level 5, while in amphibious form, target 1 creature within 30 ft that hears you. It must make a WIS save (DC 8 + PB + CHA) or be charmed and restrained until your next turn. 1/short rest. 2 targets at level 10.</description>
     <sheet>
       <description>Charm &amp; restrain 1 (or 2 at L10) creatures with voice. WIS save (DC = 8 + PB + CHA). 1/SR.</description>
@@ -56,7 +56,7 @@
   </element>
 
   <element name="Blood-Drinker's Grace" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_TRAIT_BLOOD_DRINKER">
-    <supports>Path to Matron, 7</supports>
+    <supports>Path of Matron, 7</supports>
     <description>At level 7, gain advantage on two death saves per long rest. When you reduce a creature to 0 HP with a natural weapon, gain temp HP = CHA mod + ½ level (1/short rest).</description>
     <sheet>
       <description>ADV on 2 death saves (1/LR). Gain temp HP when killing with natural weapon (1/SR).</description>
@@ -64,7 +64,7 @@
   </element>
 
   <element name="Chorus of the Deep" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_TRAIT_CHORUS_DEEP">
-    <supports>Path to Matron, 11</supports>
+    <supports>Path of Matron, 11</supports>
     <description>At level 11, emit a scream in 15 ft. All chosen targets make a CON save (DC = 8 + PB + CHA). Fail: 3d8 thunder &amp; deafened 1 turn. Success: half damage. 1/LR (2/LR at L15).</description>
     <sheet>
       <description>Thunder scream in 15 ft. CON save or 3d8 thunder + deafened. 1/LR (2/LR at L15).</description>
