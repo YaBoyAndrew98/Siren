@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+    <name>YaBoyAndrew's Homebrew</name>
+    <description>Includes the custom Siren race content for Aurora Builder.</description>
+    <update version="1.0">
+      <file name="index.xml" url="https://raw.githubusercontent.com/YaBoyAndrew98/Siren/main/index.xml" />
+    </update>
+  </info>
+  <files>
+    <file name="index.xml" url="https://raw.githubusercontent.com/YaBoyAndrew98/Siren/main/index.xml" />
+  </files>
+</index>
