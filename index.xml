@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sources>
+  <source>
+    <name>Siren Race (Homebrew)</name>
+    <category>Homebrew</category>
+    <url>https://www.dandwiki.com/wiki/Siren_(5e_Race)</url>
+    <source>Homebrew</source>
+    <file>race-siren-level-traits.xml</file>
+  </source>
+</sources>
