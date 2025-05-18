@@ -28,11 +28,6 @@
     <sheet>
       <description>Innate spellcasting: Charm Person (1/LR, L1+), Fog Cloud (1/LR, L3+), Enthrall (1/LR, L5+), CHA-based.</description>
     </sheet>
-    <rules>
-      <grant type="Innate Spellcasting" spell="ID_PHB_SPELL_CHARM_PERSON" level="1" times="1" reset="longrest" ability="charisma"/>
-      <grant type="Innate Spellcasting" spell="ID_PHB_SPELL_FOG_CLOUD" level="3" times="1" reset="longrest" ability="charisma"/>
-      <grant type="Innate Spellcasting" spell="ID_PHB_SPELL_ENTHRALL" level="5" times="1" reset="longrest" ability="charisma"/>
-    </rules>
   </element>
 
   <element name="Hungering Maw" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_PATH_TO_MATRON_TRAIT_HUNGERING_MAW">
@@ -53,8 +48,8 @@
   </element>
 
   <element name="Song of Drowning" type="Racial Trait" source="Homebrew" id="ID_CUSTOM_TRAIT_SONG_OF_DROWNING">
-    <supports>Path to Matron, 3</supports>
-    <description>At level 3, while in amphibious form, target 1 creature within 30 ft that hears you. It must make a WIS save (DC 8 + PB + CHA) or be charmed and restrained until your next turn. 1/short rest. 2 targets at level 10.</description>
+    <supports>Path to Matron, 5</supports>
+    <description>At level 5, while in amphibious form, target 1 creature within 30 ft that hears you. It must make a WIS save (DC 8 + PB + CHA) or be charmed and restrained until your next turn. 1/short rest. 2 targets at level 10.</description>
     <sheet>
       <description>Charm &amp; restrain 1 (or 2 at L10) creatures with voice. WIS save (DC = 8 + PB + CHA). 1/SR.</description>
     </sheet>
